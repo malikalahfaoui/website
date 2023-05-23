@@ -1,6 +1,6 @@
+import React, { useRef, useState } from "react";
 import classNames from "classnames";
 import useOnClickOutside from "hooks/useOnClickOutside";
-import { useRef, useState } from "react";
 
 interface ReferenceFilterDropdown {
   value?: string;

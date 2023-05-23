@@ -29,7 +29,7 @@ export default function Card({
   );
   if (link)
     return (
-      <Link href={link} className={allClassNames}>
+      <Link href={link} className={allClassNames} data-testid="card">
         {children}
       </Link>
     );
@@ -40,9 +40,14 @@ export default function Card({
         target="_blank"
         rel="noopener noreferrer"
         className={allClassNames}
+        data-testid="card"
       >
         {children}
       </a>
     );
-  return <div className={allClassNames}>{children}</div>;
+  return (
+    <div className={allClassNames} data-testid="card">
+      {children}
+    </div>
+  );
 }
