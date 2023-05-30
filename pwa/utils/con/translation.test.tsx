@@ -1,6 +1,6 @@
 import { getTranslation } from "./translation";
-import "text-encoding";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
 jest.mock("react-dom/server", () => {}, { virtual: true });
 
 describe("Translation", () => {

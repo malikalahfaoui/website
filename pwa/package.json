@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test": "jest",
     "i18n": "ts-node ./update-i18n.ts; prettier ./i18n/dictionaries/*.json --write",
     "prebuild": "ts-node ./prebuild.ts"
   },
@@ -29,6 +30,7 @@
     "gray-matter": "^4.0.3",
     "gsap": "^3.11.4",
     "isomorphic-unfetch": "^3.1.0",
+    "jest-environment-jsdom": "^29.5.0",
     "lodash.throttle": "^4.1.1",
     "mapbox-gl": "^2.13.0",
     "marked": "^4.2.12",
@@ -45,7 +47,6 @@
     "remark-mdx-frontmatter": "^2.1.1",
     "sharp": "^0.32.1",
     "shiki": "^0.14.1",
-    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "unist-util-visit": "^4.1.2"
   },
