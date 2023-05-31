@@ -34,7 +34,11 @@ const HomePage = ({ speakers, partners, images }: HomePageProps) => {
         button={
           <div className="flex">
             {currentEdition === "2023" && (
-              <BuyButton className="mr-2" id="cover">
+              <BuyButton
+                data-testid="btn-buy-tickets"
+                className="mr-2"
+                id="cover"
+              >
                 {t("buy_tickets")}
               </BuyButton>
             )}

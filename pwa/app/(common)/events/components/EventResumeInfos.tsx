@@ -28,7 +28,7 @@ export default function EventInfosCard({
         </TextIconInfo>
       ) : null}
       <TextIconInfo Icon={Clock} higlightIcon={highlightIcons}>
-        {toLocaleDate(startDate)}
+        <span data-testid="start-date">{toLocaleDate(startDate)}</span>
       </TextIconInfo>
     </div>
   );
