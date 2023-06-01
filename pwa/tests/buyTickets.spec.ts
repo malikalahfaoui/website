@@ -19,6 +19,8 @@ test('Buy button should be displayed if the event is not passed yet', async ({ p
   if(new Date(eventDate).getTime() > new Date().getTime()){
     await expect(page.getByTestId("btn-buy-tickets")).toHaveCount(1);
     page.getByTestId("btn-buy-tickets").click();
+    await expect(page.locator('iframe[src^="https://www.eventbrite.com/checkout-external"]')).toHaveCount(1);
+
   }
   else{
     await expect(page.getByTestId("btn-buy-tickets")).toHaveCount(0)
