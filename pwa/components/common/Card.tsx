@@ -40,14 +40,9 @@ export default function Card({
         target="_blank"
         rel="noopener noreferrer"
         className={allClassNames}
-        data-testid="card"
       >
         {children}
       </a>
     );
-  return (
-    <div className={allClassNames} data-testid="card">
-      {children}
-    </div>
-  );
+  return <div className={allClassNames}>{children}</div>;
 }
